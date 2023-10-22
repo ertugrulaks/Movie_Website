@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;  
+    height: 110px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    
+}
+nav header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+nav header a{
+    font-size: 35px;
+    color: rgb(79, 139, 145);
+    
+}
+nav header h1{
+    color: rgb(93, 103, 112);
+}
+nav header h1 span{
+    color: rgb(79, 139, 145);
+}
+nav ul{
+    display: flex;
+    gap: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(66, 78, 117);
+    transition: 0.5s;
+}
+nav ul li a:hover{
+     color: black;
+     border-bottom: 1px solid rgb(71, 116, 108);
+     border-radius: 5px;
+     transition: 0.5s;
+
+}
+
+.course-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.course-content .course-sec{
+    text-align: center;
+    flex: 1;
+}
+.course-content .image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.course-content .image img{
+    width: 350px;
+}
+
+.course-content .course-sec h2{
+    color: rgb(31, 31, 59);
+}
+.course-content .course-sec h2 span{
+    color: rgb(108, 108, 202);
+}
+.course-content .course-sec .p-course{
+    color: rgb(67, 134, 151);
+    margin: 20px 0px;
+}
+.course-content .course-sec .btn-course{
+      border: none;
+      background-color: rgb(34, 114, 110);
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      color: white; 
+}
+.course-content .course-sec .btn-course:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+@media (max-width:800px) {
+    .course-content{
+        flex-direction: column-reverse;
+    }
+}.info-content{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    background-color: rgb(86, 179, 179);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+}
+.info-content .info-sec{
+     text-align: center;
+     flex: 1;
+}
+.image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.info-content .info-sec h3{
+    background-color: rgb(47, 106, 155);
+    padding: 10px 20px;
+    color: white;
+    border-top-right-radius: 40px;
+    position: absolute;
+    top: -20px;
+    width: 45%;
+}
+.info-content .info-sec p{
+    color: rgb(102, 20, 211);
+    margin-bottom:20px;
+}
+.info-content .info-sec button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(14, 44, 44);
+    cursor: pointer;
+}
+.info-content .info-sec button:hover{
+    background-color: rgb(38, 38, 80);
+    transition: 0.5s;
+    opacity: 0.8;
+}
+.card-container{
+    margin-top: 50px;
+    text-align: center;
+}
+.card-container h3{
+    margin-bottom: 20px;
+    color: gray;
+    font-size: 20px;
+    border-bottom: 1px solid;
+    border-radius: 50%;
+}
+.card-content{
+    display:flex;
+    justify-content: center;
+}
+.card-content .card{
+    margin: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 15px;
+   cursor: pointer;
+}
+.card-content .card:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+    
+}
+.card-content .card button{
+    border: none;
+    padding: 5px 2.5px;
+    background-color: rgb(96, 96, 138);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card-content .card button:hover{
+    transition: 0.5s;
+    opacity: 0.5;
+}
+.card-content .card img{
+    background-color: rgb(136, 116, 116);
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+footer{
+    margin-top: 100px;
+    padding:30px;
+    border-top: 1px solid gray;
+}
+
+.footer-start{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+ .footer-start .footer-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.footer-start .footer-area a{
+    text-decoration: none;
+    color: rgb(9, 58, 73);
+    cursor: pointer;
+}
+
+footer .bottom{
+    border-top: 1px solid gray;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+.footer-start .footer-area a:hover{
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+
+
+@media(max-width:800px){
+    .info-content{
+        flex-direction: column-reverse;
+    }
+}
